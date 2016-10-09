@@ -1,0 +1,261 @@
+body, p, ul, li, input {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+@media screen and (max-width: 1000px) {
+  .header {
+    height: 80px; } }
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 60px; } }
+
+.main {
+  width: 100%;
+  heigth: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: silver; }
+  .main .header {
+    width: 100%;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    z-index: 99; }
+    .main .header .box {
+      height: 100%;
+      width: 80%;
+      margin: 0 auto;
+      display: block; }
+      .main .header .box .menu {
+        height: 44px;
+        text-align: justify; }
+        .main .header .box .menu::after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: 0; }
+        .main .header .box .menu .lists {
+          display: inline-block;
+          height: 41px;
+          z-index: 100;
+          line-height: 41px;
+          cursor: pointer; }
+          .main .header .box .menu .lists:hover {
+            border-bottom: 3px solid #0253ff; }
+    .main .header .boxs {
+      display: none;
+      height: 100%;
+      width: 80%;
+      margin: 0 auto; }
+
+.main .content .mine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../images/001.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .main .content .mine .welcome span {
+    display: block;
+    width: 80%;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    margin: auto;
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px #d9d9d9, 0 2px #cccccc, 0 3px #bfbfbf, 0 4px #b3b3b3, 0 5px #a6a6a6, 0 5px 10px black;
+    font: bold 500%/1 Rockwell, serif; }
+  .main .content .mine .bottom span {
+    display: block;
+    width: 20%;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+    font-size: 16px;
+    color: #6a1419; }
+
+.main .content .intr-self {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #d1d1d1; }
+  .main .content .intr-self .inform {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    .main .content .intr-self .inform span {
+      display: block;
+      width: 20%;
+      height: 32px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 5%;
+      margin: auto;
+      font-size: 32px;
+      font-weight: bold;
+      color: #6a1419; }
+    .main .content .intr-self .inform .myinform {
+      width: 100%;
+      height: 80%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: #586eff; }
+      .main .content .intr-self .inform .myinform .inform-left {
+        width: 27%;
+        height: 100%;
+        float: left;
+        border-right: 3px dashed black; }
+      .main .content .intr-self .inform .myinform .inform-right {
+        width: 70%;
+        height: 100%;
+        float: right; }
+
+.main .content .skills {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #c4c4c4; }
+  .main .content .skills .useful {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff; }
+    .main .content .skills .useful .smalltitle {
+      text-align: center;
+      font-weight: bold;
+      color: #6a1419; }
+    .main .content .skills .useful .my-skills {
+      float: left;
+      width: 80%;
+      margin-left: 10%;
+      text-align: justify; }
+      .main .content .skills .useful .my-skills::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 0; }
+      .main .content .skills .useful .my-skills .skilla {
+        display: inline-block; }
+    .main .content .skills .useful .pie {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      margin-top: 30px;
+      margin-left: 30px;
+      transform: rotate(-90deg);
+      float: left; }
+    .main .content .skills .useful svg {
+      background: yellowgreen;
+      border-radius: 50%; }
+    .main .content .skills .useful circle {
+      fill: yellowgreen;
+      stroke: #655;
+      stroke-width: 32; }
+
+@keyframes grow {
+  to {
+    stroke-dasharray: 70; } }
+    .main .content .skills .useful .pie.animated circle {
+      animation: grow 2s both; }
+    .main .content .skills .useful .scores {
+      float: left;
+      margin-top: 130px;
+      margin-left: 30px; }
+
+.main .content .my-pro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #979797; }
+  .main .content .my-pro .minet {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff; }
+    .main .content .my-pro .minet h2 {
+      text-align: center; }
+    .main .content .my-pro .minet .pro-box {
+      width: 100%;
+      height: 80%;
+      position: absolute;
+      bottom: 0; }
+      .main .content .my-pro .minet .pro-box li {
+        width: 25%;
+        height: 50%;
+        float: left;
+        background-color: red; }
+        .main .content .my-pro .minet .pro-box li img {
+          width: 100%;
+          height: 100%; }
+
+.main .content .working {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #868686; }
+
+.main .content .context {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #868686; }
+
+.main .content .active {
+  z-index: 50; }
